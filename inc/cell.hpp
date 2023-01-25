@@ -4,6 +4,7 @@
 #ifndef CELL_HEADER
 #define CELL_HEADER
 
+
 // BEGIN_ENUM(CellType){
 //     DECL_ENUM_ELEMENT(NONE),
 //     DECL_ENUM_ELEMENT(SAND),
@@ -17,6 +18,7 @@ enum CellType{
 
 struct Cell {
     CellType type;
+    bool updatedThisFrame;
     // int x, y;
 };
 #endif
